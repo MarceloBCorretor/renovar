@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renovação RCP AKAD 2024/25</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            font-size: 14px;
+        }
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            max-height: 60px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .form-group .radio-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-group .radio-group label {
+            width: 48%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e9e9e9;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .form-group .radio-group input {
+            display: none;
+        }
+        .form-group .radio-group input:checked + label {
+            background-color: #007BFF;
+            color: #fff;
+        }
+        .form-group-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .form-group-row .form-group {
+            flex: 1;
+            min-width: 48%;
+            margin-bottom: 10px;
+        }
+        .form-group-row .form-group:last-child {
+            margin-right: 0;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            margin: 20px auto;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .signature {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .signature-line {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .footer div {
+            width: 100%;
+            max-width: 48%;
+            margin-bottom: 10px;
+        }
+        .footer input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .advantages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .advantages div {
+            width: 48%;
+            margin-bottom: 10px;
+        }
+        .advantages div:last-child {
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            .form-group-row .form-group,
+            .footer div,
+            .advantages div {
+                width: 100%;
+            }
+        }
+        @media print {
+            .container {
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+                width: auto;
+                max-width: none;
+            }
+            .btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://i0.wp.com/revistasegurototal.com.br/wp-content/uploads/2022/06/logo-akad-seguros.png" alt="Logo Akad Seguradora">
+            <img src="https://c5gwmsmjx1.execute-api.us-east-1.amazonaws.com/prod/empresa/logo/82491/Logo.jpeg" alt="Logo Unimed Cooperativa">
+        </div>
+        <h1>👨‍⚕️ É chegada a hora de tratarmos da RENOVAÇÃO de sua apólice de Responsabilidade Civil Profissional, através do seguro coletivo pela Cooperativa Unimed Centro Rondônia.⚖️</h1>
+        
+        <div class="form-group">
+            <label for="especialidade">Especialidade Principal:</label>
+            <select id="especialidade" name="especialidade">
+                <option value="acupuntura">Acupuntura</option>
+                <option value="alergia_imunologia">Alergia e Imunologia</option>
+                <option value="anestesiologia">Anestesiologia</option>
+                <option value="angiologia">Angiologia</option>
+                <option value="cancerologia">Cancerologia</option>
+                <option value="cardiologia">Cardiologia</option>
+                <option value="cirurgia_cardiovascular">Cirurgia Cardiovascular</option>
+                <option value="cirurgia_cabeca_pescoco">Cirurgia de Cabeça e Pescoço</option>
+                <option value="cirurgia_mao">Cirurgia de Mão</option>
+                <option value="cirurgia_aparelho_digestivo">Cirurgia do Aparelho Digestivo</option>
+                <option value="cirurgia_endovascular">Cirurgia Endovascular</option>
+                <option value="cirurgia_geral">Cirurgia Geral</option>
+                <option value="cirurgia_oncologica">Cirurgia Oncológica</option>
+                <option value="cirurgia_toracica">Cirurgia Torácica</option>
+                <option value="cirurgia_vascular">Cirurgia Vascular</option>
+                <option value="clinica_medica">Clínica Médica</option>
+                <option value="coloproctologia">Coloproctologia</option>
+                <option value="dermatologia_invasiva">Dermatologia Invasiva</option>
+                <option value="dermatologia_nao_invasiva">Dermatologia não Invasiva</option>
+                <option value="endocrinologia">Endocrinologia e Metabologia</option>
+                <option value="endoscopia">Endoscopia</option>
+                <option value="gastroenterologia">Gastroenterologia</option>
+                <option value="genetica_medica">Genética Médica</option>
+                <option value="geriatria">Geriatria</option>
+                <option value="ginecologia_obstetricia">Ginecologia e Obstetrícia</option>
+                <option value="ginecologia">Ginecologia sem Obstetrícia</option>
+                <option value="hematologia">Hematologia e Hemoterapia</option>
+                <option value="homeopatia">Homeopatia</option>
+                <option value="infectologia">Infectologia</option>
+                <option value="mastologia">Mastologia</option>
+                <option value="medicina_familia">Medicina da Família e Comunidade</option>
+                <option value="medicina_urgencia">Medicina de Urgência</option>
+                <option value="medicina_trabalho">Medicina do Trabalho</option>
+                <option value="medicina_trafego">Medicina do Tráfego</option>
+                <option value="medicina_esportiva">Medicina Esportiva</option>
+                <option value="medicina_reabilitacao">Medicina Física e Reabilitação</option>
+                <option value="medicina_intensiva">Medicina Intensiva</option>
+                <option value="medicina_legal">Medicina Legal e Perícia Médica</option>
+                <option value="medicina_nuclear">Medicina Nuclear</option>
+                <option value="medicina_preventiva">Medicina Preventiva e Social</option>
+                <option value="nefrologia">Nefrologia</option>
+                <option value="neurocirurgia">Neurocirurgia</option>
+                <option value="neurologia">Neurologia</option>
+                <option value="nutrologia">Nutrologia</option>
+                <option value="oftalmologia">Oftalmologia</option>
+                <option value="otorrinolaringologia">Otorrinolaringologia</option>
+                <option value="patologia_clinica">Patologia Clínica (Medicina Laboratorial)</option>
+                <option value="pediatria_clinica">Pediatria Clínica</option>
+                <option value="pediatria_intensiva">Pediatria Intensiva</option>
+                <option value="pneumologia">Pneumologia</option>
+                <option value="psiquiatria">Psiquiatria</option>
+                <option value="radiologia">Radiologia e Diagnóstico por Imagem</option>
+                <option value="radioterapia">Radioterapia</option>
+                <option value="reumatologia">Reumatologia</option>
+                <option value="urologia">Urologia</option>
+                <option value="traumatologia_ortopedia">Traumatologia e Ortopedia</option>
+            </select>
+        </div>
+
+        <div class="form-group-row">
+            <div class="form-group">
+                <label for="capital">Capital Segurado:</label>
+                <select id="capital" name="capital">
+                    <option value="150000">R$ 150.000</option>
+                    <option value="300000">R$ 300.000</option>
+                    <option value="500000">R$ 500.000</option>
+                    <option value="800000">R$ 800.000</option>
+                    <option value="1000000">R$ 1.000.000</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="valor">Valor Contratado (R$):</label>
+                <input type="text" id="valor" name="valor" readonly>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <p>Você já sofreu qualquer tipo de reclamação extrajudicial, processo judicial, civil, criminal ou ético administrativo por dano(s) causado(s) pela prestação de seus serviços nos últimos 5 anos?</p>
+            <div class="radio-group">
+                <input type="radio" id="reclamacao_nao" name="reclamacao" value="nao">
+                <label for="reclamacao_nao">Não</label>
+                <input type="radio" id="reclamacao_sim" name="reclamacao" value="sim">
+                <label for="reclamacao_sim">Sim</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="reclamacao_andamento" name="reclamacao_status" value="andamento">
+                <label for="reclamacao_andamento">Em andamento</label>
+                <input type="radio" id="reclamacao_encerrado" name="reclamacao_status" value="encerrado">
+                <label for="reclamacao_encerrado">Encerrado</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <p>Você tem conhecimento de qualquer fato ou circunstância que possa gerar uma reclamação extrajudicial, processo judicial, civil, criminal ou ético administrativo ou de qualquer tipo similar de pedido de reparação de dano(s) causado(s) pela prestação de seus serviços?</p>
+            <div class="radio-group">
+                <input type="radio" id="fato_nao" name="fato" value="nao">
+                <label for="fato_nao">Não</label>
+                <input type="radio" id="fato_sim" name="fato" value="sim">
+                <label for="fato_sim">Sim</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <p>Autorizo a Cooperativa Unimed Centro Rondônia a descontar em minha produção o valor escolhido acima. Estou ciente que a renovação é anual e que caso tenha conhecimento de algum processo contra meu CPF devo avisar de imediato ao corretor. (art. 206 § 1º do Código Civil)</p>
+        </div>
+
+        <div class="signature-line">
+            _________________________________________________
+            <p>Assinatura do Cooperado</p>
+        </div>
+
+        <div class="footer">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+            <div>
+                <label for="crm">CRM:</label>
+                <input type="text" id="crm" name="crm">
+            </div>
+        </div>
+
+        <div class="advantages">
+            <div><strong>Vantagens Adicionais Contratadas:</strong></div>
+            <div></div>
+            <div>Livre indicação de Advogado</div>
+            <div>Extensão para Pessoa Jurídica</div>
+            <div>Ressarcimentos de Despesas</div>
+            <div>Acordo Judicial ou Extrajudicial</div>
+            <div>Custos Emergenciais e Urgências</div>
+	    <div>Danos Materias,corporais, estéticose morais</div>
+	    <div>Omissão de Socorro / Infecção Hospitalar</div>
+	    <div>Danos a exames ou laudos de clientes</div>
+            <div>Proteção à Reputação na Mídia</div>
+ 	    <div>Rede Defesa Especializada</div>
+	    <div>Ato do bom Samaritano e Telemedicina</div>
+            <div>Obstetrícia com Franquia 10% dos prejuízos, mínimo de R$500,00</div>
+        </div>
+
+        <div class="form-group">
+            <button class="btn" onclick="window.print()">Imprimir PDF</button>
+        </div>
+    </div>
+
+    <script>
+        const especialidades = {
+            "acupuntura": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "alergia_imunologia": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "anestesiologia": [212.36, 327.25, 436.14, 493.64, 555.35],
+            "angiologia": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "cancerologia": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "cardiologia": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "cirurgia_cardiovascular": [212.36, 327.25, 436.14, 493.64, 555.35],
+            "cirurgia_cabeca_pescoco": [212.36, 327.25, 436.14, 493.64, 555.35],
+            "cirurgia_mao": [212.36, 327.25, 436.14, 493.64, 555.35],
+            "cirurgia_aparelho_digestivo": [212.36, 327.25, 436.14, 493.64, 555.35],
+            "cirurgia_endovascular": [212.36, 327.25, 436.14, 493.64, 555.35],
+            "cirurgia_geral": [212.36, 327.25, 436.14, 493.64, 555.35],
+            "cirurgia_oncologica": [212.36, 327.25, 436.14, 493.64, 555.35],
+            "cirurgia_toracica": [212.36, 327.25, 436.14, 493.64, 555.35],
+            "cirurgia_vascular": [212.36, 327.25, 436.14, 493.64, 555.35],
+            "clinica_medica": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "coloproctologia": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "dermatologia_invasiva": [212.36, 327.25, 436.14, 493.64, 555.35],
+            "dermatologia_nao_invasiva": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "endocrinologia": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "endoscopia": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "gastroenterologia": [212.36, 327.25, 436.14, 493.64, 555.35],
+            "genetica_medica": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "geriatria": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "ginecologia_obstetricia": [311.13, 483.60, 647.09, 768.09, 826.05],
+            "ginecologia": [212.36, 327.25, 436.14, 493.64, 555.35],
+            "hematologia": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "homeopatia": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "infectologia": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "mastologia": [212.36, 327.25, 436.14, 493.64, 555.35],
+            "medicina_familia": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "medicina_urgencia": [212.36, 327.25, 436.14, 493.64, 555.35],
+            "medicina_trabalho": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "medicina_trafego": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "medicina_esportiva": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "medicina_reabilitacao": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "medicina_intensiva": [212.36, 327.25, 436.14, 493.64, 555.35],
+            "medicina_legal": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "medicina_nuclear": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "medicina_preventiva": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "nefrologia": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "neurocirurgia": [212.36, 327.25, 436.14, 493.64, 555.35],
+            "neurologia": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "nutrologia": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "oftalmologia": [212.36, 327.25, 436.14, 493.64, 555.35],
+            "otorrinolaringologia": [212.36, 327.25, 436.14, 493.64, 555.35],
+            "patologia_clinica": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "pediatria_clinica": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "pediatria_intensiva": [212.36, 327.25, 436.14, 493.64, 555.35],
+            "pneumologia": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "psiquiatria": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "radiologia": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "radioterapia": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "reumatologia": [110.83, 160.78, 208.12, 233.12, 259.95],
+            "urologia": [212.36, 327.25, 436.14, 493.64, 555.35],
+            "traumatologia_ortopedia": [212.36, 327.25, 436.14, 493.64, 555.35]
+        };
+
+        document.getElementById('especialidade').addEventListener('change', updateValue);
+        document.getElementById('capital').addEventListener('change', updateValue);
+
+        function updateValue() {
+            const especialidade = document.getElementById('especialidade').value;
+            const capital = document.getElementById('capital').value;
+
+            if (especialidade && capital) {
+                const capitalIndex = {
+                    "150000": 0,
+                    "300000": 1,
+                    "500000": 2,
+                    "800000": 3,
+                    "1000000": 4
+                }[capital];
+                
+                const valor = especialidades[especialidade][capitalIndex];
+                document.getElementById('valor').value = valor;
+            }
+        }
+    </script>
+</body>
+</html>
